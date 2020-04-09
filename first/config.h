@@ -15,6 +15,8 @@ typedef uint8_t u8;
 typedef uint16_t u16;
 typedef uint32_t u32;
 
+#define NULL 0
+
 /* bit of system  16or 32or 64
 硬件是32位或16位
  */
@@ -22,10 +24,13 @@ typedef uint32_t u32;
 
 #if(SYSTEM==8)
 typedef u8 SYSTEMbit;
+#define SysMAX (SYSTEMbit)0xfe
 #elif(SYSTEM==16)
 typedef u16 SYSTEMbit;
+#define SysMAX (SYSTEMbit)0xfffe
 #elif(SYSTEM==32)
 typedef u32 SYSTEMbit;
+#define SysMAX (SYSTEMbit)0xfffffffe
 #endif
 
 

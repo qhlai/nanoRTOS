@@ -14,28 +14,33 @@ struct node1
     char num;
     u8 arry[];
 };
-struct LIST_ITEM
+typedef struct LIST_ITEM
 {
     SYSTEMbit num;//count
-    struct xLIST_ITEM*next;
-    struct xLIST_ITEM*pervious;
+    struct LIST_ITEM*next;
+    struct LIST_ITEM*pervious;
     void * OwnerCore;
     void * OwnerList;
-    u32 data[];
-};
-struct LIST_ITEM_Simplified
+    //u32 data[];
+}LIST_ITEM;
+//typedef struct LIST_ITEM LIST_ITEM;
+
+typedef struct LIST_ITEM_Simplified
 {
     SYSTEMbit num;//count
-    struct xLIST_ITEM*next;
-    struct xLIST_ITEM*pervious;
+    struct LIST_ITEM*next;
+    struct LIST_ITEM*pervious;
     //u32 data[];
-};
+}LIST_ITEM_Simplified;
+
+//typedef struct LIST_ITEM_Simplified LIST_ITEM_Simplified;
+
 typedef struct LIST
 {
     SYSTEMbit SumNode;
     LIST_ITEM *Index;//now
     LIST_ITEM *LastItem;
-}
+} LIST;
 
 
 

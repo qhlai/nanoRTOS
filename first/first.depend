@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1586439989 source:f:\mcu\rtos\nanortos\first\main.cpp
+	<iostream>
+	"AllLib.h"
+
+1586439868 f:\mcu\rtos\nanortos\first\alllib.h
+	"config.h"
+	"list.h"
+	"thread.h"
+
+1586441447 f:\mcu\rtos\nanortos\first\config.h
+	"AllLib.h"
+
+1586441154 f:\mcu\rtos\nanortos\first\list.h
+	"AllLib.h"
+
+1586439989 f:\mcu\rtos\nanortos\first\thread.h
+	"AllLib.h"
+
+1586440011 source:f:\mcu\rtos\nanortos\first\list.c
+	"AllLib.h"
+
+1586440011 source:f:\mcu\rtos\nanortos\first\thread.c
+	"AllLib.h"
+
